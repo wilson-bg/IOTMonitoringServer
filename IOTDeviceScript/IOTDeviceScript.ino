@@ -158,7 +158,7 @@ float readHumedad() {
 }
 
 /**
- * Lee la humedad del sensor DHT, la imprime en consola y la devuelve.
+ * Lee la luminosidad, la imprime en consola y la devuelve.
  */
 float readLuminosidad() {
   // Se lee la luminosidad
@@ -443,7 +443,6 @@ void measure() {
     // Se chequea si los valores son correctos
     if (checkMeasures(temp, humi, lumi)) {
       // Se envían los datos
-      Serial.println("\n Send data");
       sendSensorData(temp, humi, lumi); 
     }
   }
