@@ -118,7 +118,7 @@ void mqtt_connect()
 void sendSensorData(float temperatura, float humedad, float luminosidad) {
   String data = "{";
   data += "\"temperatura\": "+ String(temperatura, 1) +", ";
-  data += "\"humedad\": "+ String(humedad, 1);
+  data += "\"humedad\": "+ String(humedad, 1)  +", ";
   data += "\"luminosidad\": "+ String(luminosidad, 1);
   data += "}";
   char payload[data.length()+1];
